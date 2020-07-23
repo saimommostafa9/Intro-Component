@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+body{
+  background: url(images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+  margin: 0;
+  padding: 0%;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+  
+  /* Clear floats after the columns */
+.container:after {
+    content: "";
+    display: none;
+    clear: both;
+  }
+
+
+.left{
+  color: #ffffff;
+  padding: 13% 2% 12% 12%;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.hero{
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+.right{
+  padding: 4% 11% 4% 1%;
+}
+
+.up{
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  padding: 3%;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.box{
+  background-color: white;
+  text-align: center;
+  padding: 4%;
+  border-radius: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 3% 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover{
+  opacity: .7;
+}
+
+button:active{
+  opacity: .7;
+}
+
+.terms{
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 375px) {
+  .left, .right {
+    width: 100%;
+    padding: 3% 6%;
+  }
+  .left{
+    text-align: center;
+  }
+}
